@@ -20,7 +20,7 @@ public class Administrador {
     @Column(name = "email", length = 180, nullable = false)
     private String email;
 
-    @Column(name = "senha", length = 250, nullable = false)
+    @Column(name = "senha", length = 255, nullable = false)
     private String senha;
 
     @Column(name = "observacao")
@@ -43,7 +43,7 @@ public class Administrador {
         this.id = id;
     }
     public String getSenha() {
-        return senha.substring(0,3) + "***";
+        return senha.substring(0,0) + "*****";
     }
 
     public void setSenha(String senha) {
